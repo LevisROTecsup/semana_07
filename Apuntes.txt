@@ -1,0 +1,40 @@
+npm init -y
+npm i express
+npm i nodemon -D
+npm i jest -D
+npm i supertest -D
+npm install prisma --save-dev
+npm i jsonwebtoken
+npm i object-hash
+
+Para correr la aplicacion
+=========================
+npm run dev
+
+prisma
+======
+npm install @prisma/client
+npx prisma generate
+npm prisma init
+
+prisma migrate dev --name user_table
+prisma migrate dev --name stories_table
+
+
+Para testear la aplicacion
+=========================
+npm run test
+
+Solucion a mi error
+==================
+npm i -g @babel/node
+
+
+Docker
+======
+docker-compose up -d
+
+docker ps -a
+
+
+npm cache clean --force
